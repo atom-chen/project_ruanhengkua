@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="test_creationclass.cpp" />
+    <ClCompile Include="src\dl_dxf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dl_writer_ascii.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TableParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test_creationclass.h" />
+    <ClInclude Include="src\dl_attributes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_codes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_creationadapter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_creationinterface.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_dxf.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_entities.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_exception.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_extrusion.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_writer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dl_writer_ascii.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="TableParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e1a681e8-6078-4fe0-a995-8a983e67ff98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

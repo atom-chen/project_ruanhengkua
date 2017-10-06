@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<typelist>
+    <item name="支柱" id="1010" type="4" />
+    <item name="承力索" id="1011" type="1" />
+    <item name="接触线" id="1012" type="1" />
+    <item name="横向承力索" id="1013" type="1" />
+    <item name="上部固定绳" id="1013" type="1" />
+    <item name="下部固定绳" id="1013" type="1" />
+    <item name="补偿器" id="1014" type="3" />
+  	<item name="定位环" id="1015" type="1" />
+  	<item name="杵头杆" id="1016" type="3" />
+  	<item name="承力索线夹" id="1017" type="1" />
+  	<item name="定位器" id="1018" type="1" />
+  	<item name="耳环杆" id="1019" type="3" />
+  	<item name="连接器" id="1020" type="3" />
+</typelist>

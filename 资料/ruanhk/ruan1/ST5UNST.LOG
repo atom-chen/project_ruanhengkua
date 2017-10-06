@@ -1,0 +1,154 @@
+ %% PLEASE DO NOT MODIFY OR DELETE THIS FILE! %% 
+ %% 文件包含关于应用程序安装的信息。 %% 
+ %% 如果选择这样做，将自动删除您计算机上的所有应用程序部件。 %% 
+
+
+NOTE: 引导扇区首
+
+CONFIG: Title: "铁路电气化软横跨计算系统"
+
+ACTION: TempFile: "C:\WINDOWS\setup1.exe"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "SharedDLLs"
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\VB5StKit.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\VB5CHS.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\MSVBVM50.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\StdOle2.tlb"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\OleAut32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\OlePro32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\AsycFilt.dll"
+(磁盘上的当前文件已经过时)
+
+NOTE: 由于将只用于 Windows NT 3.51，文件 'Ctl3d32.dll' 未被复制。它不需要在 Windows 95 或 NT 4.0 下使用。
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\Ctl3d32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\ComCat.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSVBVM50.dll"
+
+ACTION: TLBRegister: "C:\WINDOWS\SYSTEM\StdOle2.tlb"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\OleAut32.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\OlePro32.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\ComCat.dll"
+
+NOTE: 引导扇区尾
+
+NOTE: 正在生成主安装程序 'C:\WINDOWS\setup1.exe'....
+
+ACTION: ShellFolder: "铁路电气化软横跨计算系统"
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\COMCTL32.OCX"
+(磁盘上的当前文件已经过时)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\COMDLG32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\CmDlgCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\DBGRID32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\DBGrdCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\MSJtEr35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\MSJInt35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\MSVCRT40.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\DBLIST32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\DBLstCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\PICCLP32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\PcClpCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\MSJet35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\VBAJet32.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\SYSTEM\VB5DB.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\MSRD2x35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\MsRepl35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\ODBCJt32.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\ODBCJI32.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM\ODBCTL32.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\hjs\Ruan\ruan1\RUAN.exe"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: CreateDir: "d:\hjs\Ruan\ruan1\data"
+
+ACTION: PrivateFile: "d:\hjs\Ruan\ruan1\data\RuanHK.mdb"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\COMCTL32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\COMDLG32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\DBGRID32.OCX"
+
+ACTION: DllSelfRegister: "C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\DBLIST32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\PICCLP32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSJet35.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM\MSRD2x35.dll"
+
+ACTION: ShellLink: "铁路电气化软横跨计算系统", "铁路电气化软横跨计算系统"
+
+ACTION: ShellLink: "铁路电气化软横跨计算系统", "铁路电气化软横跨计算系统"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "App Paths\RUAN.exe"
+
+ACTION: RegValue: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\RUAN.exe", ""
+

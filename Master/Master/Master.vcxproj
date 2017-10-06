@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9E36D3F3-E6D6-414D-92D4-468FF6E0BC22}</ProjectGuid>
+    <RootNamespace>Master</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Program Files\Xtreme ToolkitPro v15.0.1\Source;UltimateGrid\Include;UltimateGrid\CellTypes</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Program Files\Xtreme ToolkitPro v15.0.1\Lib\vc100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ToolkitPro1501vc100D.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);D:\DevelopTools\Xtreme\Xtreme ToolkitPro v15.0.1\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Program Files\Xtreme ToolkitPro v15.0.1\Source;UltimateGrid\Include;UltimateGrid\CellTypes</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>F:\Program Files\Xtreme ToolkitPro v15.0.1\Lib\vc100</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ToolkitPro1501vc100.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);D:\DevelopTools\Xtreme\Xtreme ToolkitPro v15.0.1\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\图标\maintoolbar.bmp" />
+    <None Include="..\..\快盘\软件材料\Master\Master\res\paneicons.bmp" />
+    <None Include="Master.reg" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\folders.bmp" />
+    <None Include="res\icon4.ico" />
+    <None Include="res\icon5.ico" />
+    <None Include="res\icon6.ico" />
+    <None Include="res\mainfram.bmp" />
+    <None Include="res\maintoolbar.bmp" />
+    <None Include="res\maintoolbar1.bmp" />
+    <None Include="res\Master.ico" />
+    <None Include="res\Master.rc2" />
+    <None Include="res\MasterDoc.ico" />
+    <None Include="res\paneicons.bmp" />
+    <None Include="res\softcross.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\toolbarGray.bmp" />
+    <None Include="res\toolbarGray.ico" />
+    <None Include="res\toolbarGray.png" />
+    <None Include="res\toolbarLight.bmp" />
+    <None Include="res\TreeIcons.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CListCtrlEx\ListCtrlEx.h" />
+    <ClInclude Include="CListCtrlEx\MsgHook.h" />
+    <ClInclude Include="CommonFunction\CommonFunction.h" />
+    <ClInclude Include="CXTPEx\XTPTabControlEx.h" />
+    <ClInclude Include="DataValidator.h" />
+    <ClInclude Include="DB\DBInit.h" />
+    <ClInclude Include="DB\DxfTitleDBManager.h" />
+    <ClInclude Include="DB\NodeDBManager.h" />
+    <ClInclude Include="DB\PartConnectDBManager.h" />
+    <ClInclude Include="DB\PartDBManager.h" />
+    <ClInclude Include="DB\PartTypeDBManager.h" />
+    <ClInclude Include="DB\PartTypeManager.h" />
+    <ClInclude Include="DB\PillarDBManager.h" />
+    <ClInclude Include="DB\SegDBManager.h" />
+    <ClInclude Include="DB\SegInFormatter.h" />
+    <ClInclude Include="DB\SegInputDBManager.h" />
+    <ClInclude Include="DB\SegOutDBManager.h" />
+    <ClInclude Include="DB\SegOutFormatter.h" />
+    <ClInclude Include="DB\SegParamDBManager.h" />
+    <ClInclude Include="DB\SiteDBManager.h" />
+    <ClInclude Include="DrawGraph.h" />
+    <ClInclude Include="DxfTitleDlg.h" />
+    <ClInclude Include="DxfTitleSetDlg.h" />
+    <ClInclude Include="dxf\dxflib\dl_attributes.h" />
+    <ClInclude Include="dxf\dxflib\dl_codes.h" />
+    <ClInclude Include="dxf\dxflib\dl_creationadapter.h" />
+    <ClInclude Include="dxf\dxflib\dl_creationinterface.h" />
+    <ClInclude Include="dxf\dxflib\dl_dxf.h" />
+    <ClInclude Include="dxf\dxflib\dl_entities.h" />
+    <ClInclude Include="dxf\dxflib\dl_exception.h" />
+    <ClInclude Include="dxf\dxflib\dl_extrusion.h" />
+    <ClInclude Include="dxf\dxflib\dl_writer.h" />
+    <ClInclude Include="dxf\dxflib\dl_writer_ascii.h" />
+    <ClInclude Include="dxf\DxfParser.h" />
+    <ClInclude Include="dxf\TableParser.h" />
+    <ClInclude Include="dxf\test_creationclass.h" />
+    <ClInclude Include="GlobalFun.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Master.h" />
+    <ClInclude Include="MasterDoc.h" />
+    <ClInclude Include="MasterView.h" />
+    <ClInclude Include="miniexcel\mexcel.h" />
+    <ClInclude Include="MyStatic.h" />
+    <ClInclude Include="NodeManagerDlg.h" />
+    <ClInclude Include="NodeModifyDlg.h" />
+    <ClInclude Include="PartConnectDlg.h" />
+    <ClInclude Include="PartConnectModifyDlg.h" />
+    <ClInclude Include="PartDlg.h" />
+    <ClInclude Include="PartLibDlg.h" />
+    <ClInclude Include="PartLibManagerDlg.h" />
+    <ClInclude Include="PartManagerDlg.h" />
+    <ClInclude Include="PartTypeDlg.h" />
+    <ClInclude Include="PartTypeManagerDlg.h" />
+    <ClInclude Include="PillarPartDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SegManagerDlg.h" />
+    <ClInclude Include="SegNodeSelDlg.h" />
+    <ClInclude Include="SegParamFormatter.h" />
+    <ClInclude Include="SegPartSelDlg.h" />
+    <ClInclude Include="SiteManagerDlg.h" />
+    <ClInclude Include="SoftCrossCalculatePage.h" />
+    <ClInclude Include="SoftCrossCompute.h" />
+    <ClInclude Include="sqlite3\CppSQLite3.h" />
+    <ClInclude Include="sqlite3\sqlite3.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxml\tinyxml.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTafnt.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTAutoSize.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTbutn.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTDropGrid.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTdtp.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\ugctelps.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTExpand.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTLabeled.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTMail.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTMailSort.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTMarquee.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTmfnt.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTNote.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\ugctnotewnd.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTOutlookHeader.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTpie.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTpro1.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTprog.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTRado.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTsarw.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTsldr.h" />
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTSpin.h" />
+    <ClInclude Include="UltimateGrid\DataType.h" />
+    <ClInclude Include="UltimateGrid\GridCtrl.h" />
+    <ClInclude Include="UltimateGrid\Include\UG64Bit.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCBType.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCell.h" />
+    <ClInclude Include="UltimateGrid\Include\ugceltyp.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCnrBtn.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCTarrw.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCtrl.h" />
+    <ClInclude Include="UltimateGrid\Include\ugdefine.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDLType.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDrgDrp.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDrwHnt.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDtaSrc.h" />
+    <ClInclude Include="UltimateGrid\Include\UGEdit.h" />
+    <ClInclude Include="UltimateGrid\Include\UGEditBase.h" />
+    <ClInclude Include="UltimateGrid\Include\ugformat.h" />
+    <ClInclude Include="UltimateGrid\Include\uggdinfo.h" />
+    <ClInclude Include="UltimateGrid\Include\UGGrid.h" />
+    <ClInclude Include="UltimateGrid\Include\UGHint.h" />
+    <ClInclude Include="UltimateGrid\Include\ughscrol.h" />
+    <ClInclude Include="UltimateGrid\Include\uglstbox.h" />
+    <ClInclude Include="UltimateGrid\Include\UGMEdit.h" />
+    <ClInclude Include="UltimateGrid\Include\UGMemMan.h" />
+    <ClInclude Include="UltimateGrid\Include\UGMultiS.h" />
+    <ClInclude Include="UltimateGrid\Include\ugprint.h" />
+    <ClInclude Include="UltimateGrid\Include\ugptrlst.h" />
+    <ClInclude Include="UltimateGrid\Include\ugsidehd.h" />
+    <ClInclude Include="UltimateGrid\Include\UGStrOp.h" />
+    <ClInclude Include="UltimateGrid\Include\ugstruct.h" />
+    <ClInclude Include="UltimateGrid\Include\ugtab.h" />
+    <ClInclude Include="UltimateGrid\Include\UGTopHdg.h" />
+    <ClInclude Include="UltimateGrid\Include\ugvscrol.h" />
+    <ClInclude Include="UltimateGrid\Include\ugxpthemes.h" />
+    <ClInclude Include="WorkArea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CListCtrlEx\ListCtrlEx.cpp" />
+    <ClCompile Include="CListCtrlEx\MsgHook.cpp" />
+    <ClCompile Include="CommonFunction\CommonFunction.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CXTPEx\XTPTabControlEx.cpp" />
+    <ClCompile Include="DataValidator.cpp" />
+    <ClCompile Include="DB\DBInit.cpp" />
+    <ClCompile Include="DB\DxfTitleDBManager.cpp" />
+    <ClCompile Include="DB\NodeDBManager.cpp" />
+    <ClCompile Include="DB\PartConnectDBManager.cpp" />
+    <ClCompile Include="DB\PartDBManager.cpp" />
+    <ClCompile Include="DB\PartTypeDBManager.cpp" />
+    <ClCompile Include="DB\PartTypeManager.cpp" />
+    <ClCompile Include="DB\PillarDBManager.cpp" />
+    <ClCompile Include="DB\SegDBManager.cpp" />
+    <ClCompile Include="DB\SegInFormatter.cpp" />
+    <ClCompile Include="DB\SegInputDBManager.cpp" />
+    <ClCompile Include="DB\SegOutDBManager.cpp" />
+    <ClCompile Include="DB\SegOutFormatter.cpp" />
+    <ClCompile Include="DB\SegParamDBManager.cpp" />
+    <ClCompile Include="DB\SiteDBManager.cpp" />
+    <ClCompile Include="DrawGraph.cpp" />
+    <ClCompile Include="DxfTitleDlg.cpp" />
+    <ClCompile Include="DxfTitleSetDlg.cpp" />
+    <ClCompile Include="dxf\dxflib\dl_dxf.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dxf\dxflib\dl_writer_ascii.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dxf\TableParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dxf\test_creationclass.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GlobalFun.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Master.cpp" />
+    <ClCompile Include="MasterDoc.cpp" />
+    <ClCompile Include="MasterView.cpp" />
+    <ClCompile Include="miniexcel\mexcel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MyStatic.cpp" />
+    <ClCompile Include="NodeManagerDlg.cpp" />
+    <ClCompile Include="NodeModifyDlg.cpp" />
+    <ClCompile Include="PartConnectDlg.cpp" />
+    <ClCompile Include="PartConnectModifyDlg.cpp" />
+    <ClCompile Include="PartDlg.cpp" />
+    <ClCompile Include="PartLibDlg.cpp" />
+    <ClCompile Include="PartLibManagerDlg.cpp" />
+    <ClCompile Include="PartManagerDlg.cpp" />
+    <ClCompile Include="PartTypeDlg.cpp" />
+    <ClCompile Include="PartTypeManagerDlg.cpp" />
+    <ClCompile Include="PillarPartDlg.cpp" />
+    <ClCompile Include="SegManagerDlg.cpp" />
+    <ClCompile Include="SegNodeSelDlg.cpp" />
+    <ClCompile Include="SegParamFormatter.cpp" />
+    <ClCompile Include="SegPartSelDlg.cpp" />
+    <ClCompile Include="SiteManagerDlg.cpp" />
+    <ClCompile Include="SoftCrossCalculatePage.cpp" />
+    <ClCompile Include="SoftCrossCompute.cpp" />
+    <ClCompile Include="sqlite3\CppSQLite3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTafnt.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTAutoSize.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTbutn.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTDropGrid.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTdtp.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\ugctelps.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTExpand.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTLabeled.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTMail.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTMailSort.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTMarquee.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTmfnt.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTNote.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\ugctnotewnd.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTOutlookHeader.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTpie.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTpro1.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTprog.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTRado.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTsarw.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTsldr.cpp" />
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTSpin.cpp" />
+    <ClCompile Include="UltimateGrid\GridCtrl.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCBType.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCell.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCelTyp.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCnrBtn.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCTarrw.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCtrl.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDLType.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDrgDrp.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDrwHnt.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDtaSrc.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGEdit.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGEditBase.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugformat.cpp" />
+    <ClCompile Include="UltimateGrid\Source\uggdinfo.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGGrid.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGHint.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ughscrol.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugLstBox.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGMEdit.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGMemMan.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGMultiS.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugprint.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugptrlst.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugsidehd.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGStrOp.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugtab.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGTopHdg.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugvscrol.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGXPThemes.cpp" />
+    <ClCompile Include="WorkArea.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Master.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Master.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

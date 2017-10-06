@@ -1,0 +1,958 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Master.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PANE_ICONS          BITMAP                  "res\\paneicons.bmp"
+IDB_FOLDERS             BITMAP                  "res\\folders.bmp"
+IDR_TREE_ICONS          BITMAP                  "res\\TreeIcons.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_SOFT_CROSS_1        BITMAP                  "res\\softcross.bmp"
+IDR_MAINTOOLBAR         BITMAP                  "res\\maintoolbar.bmp"
+IDB_TOOLBARLIGHT        BITMAP                  "res\\toolbarLight.bmp"
+IDB_TOOLBARGRAY1        BITMAP                  "res\\maintoolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CONTACTS            ICON                    "res\\icon4.ico"
+IDI_TASKS               ICON                    "res\\icon5.ico"
+IDI_NOTES               ICON                    "res\\icon6.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Master"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Master Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SITE_MANAGER DIALOGEX 0, 0, 290, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加站点"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SITENAME,83,23,178,17,ES_AUTOHSCROLL
+    LTEXT           "站点名：",IDC_STATIC,39,26,37,15
+    PUSHBUTTON      "确定",IDOK,95,51,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,51,50,14
+END
+
+IDD_SEG_MANAGER DIALOGEX 0, 0, 257, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分段管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,78,61,50,14
+    PUSHBUTTON      "取消",IDCANCEL,134,61,50,14
+    COMBOBOX        IDC_COMBOSITE,96,17,95,99,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDITSEGNAME,96,39,133,14,ES_AUTOHSCROLL
+    LTEXT           "分段名：",IDC_STATIC_SEG,36,39,37,19
+    LTEXT           "所属站点：",IDC_STATIC_SITE,37,17,46,19
+END
+
+IDD_PARTLIBDLG DIALOGEX 0, 0, 480, 355
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "零件库"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "零件库列表：",IDC_STATIC,46,20,64,15
+    LTEXT           "零件列表：",IDC_STATIC,228,20,64,15
+    LISTBOX         IDC_LISTPARTLIB,43,41,154,254,LBS_SORT | LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PARTTREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,228,42,207,254
+    PUSHBUTTON      "添加零件库",IDB_ADDLIB,115,311,58,19
+    PUSHBUTTON      "修改零件库",IDB_EDITLIB,185,311,58,19
+    PUSHBUTTON      "删除零件库",IDB_DELLIB,255,311,58,19
+    PUSHBUTTON      "关闭",IDCANCEL,325,311,58,19
+END
+
+IDD_PARTLIBMANAGERDLG DIALOGEX 0, 0, 537, 374
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "零件库管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,416,353,50,14
+    PUSHBUTTON      "取消",IDCANCEL,480,353,50,14
+    EDITTEXT        IDC_EDITLIBNAME,104,15,175,20,ES_AUTOHSCROLL
+    LTEXT           "零件库名：",IDC_STATIC,51,20,44,16
+    CONTROL         "",IDC_NONSELTREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,50,54,167,257
+    CONTROL         "",IDC_SELTREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,292,56,175,253
+    PUSHBUTTON      "<",IDB_SINGLEUNSEL,232,177,35,16
+    PUSHBUTTON      ">",IDB_SINGLESEL,232,157,35,16
+    LTEXT           "可选零件",IDC_STATIC,49,39,67,12
+    LTEXT           "已选零件",IDC_STATIC,293,41,67,13
+END
+
+IDD_PARTDLG DIALOGEX 0, 0, 304, 282
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "零件管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,229,252,50,20
+    CONTROL         "",IDC_LISTPART,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,30,270,216
+    LTEXT           "零件类型：",IDC_STATIC,16,12,44,12
+    PUSHBUTTON      "添加",IDB_ADD,34,252,50,20
+    PUSHBUTTON      "修改",IDB_EDIT,99,252,50,20
+    PUSHBUTTON      "删除",IDB_DEL,164,252,50,20
+    COMBOBOX        IDC_COMBOTYPE,67,9,119,174,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "零件类型管理",IDB_ADD2,198,7,60,17
+END
+
+IDD_PARTMANAGERDLG DIALOGEX 0, 0, 196, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加零件"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,97,50,14
+    PUSHBUTTON      "取消",IDCANCEL,95,97,50,14
+    LTEXT           "零件类型：",IDC_STATIC,18,9,47,11
+    COMBOBOX        IDC_COMBOTYPE,59,6,98,54,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "零件名称：",IDC_STATIC,18,28,47,11
+    EDITTEXT        IDC_EDTPARTNAME,59,26,98,12,ES_AUTOHSCROLL
+    LTEXT           "重量：",IDC_STATIC,18,49,47,11
+    LTEXT           "尺寸：",IDC_STATIC,18,76,47,11
+    EDITTEXT        IDC_EDTWEIGHT,59,49,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTLENGTH,59,73,98,12,ES_AUTOHSCROLL
+    LTEXT           "( m )",IDC_STATIC,163,75,16,12
+END
+
+IDD_NODEMANAGERDLG DIALOGEX 0, 0, 281, 267
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "节点管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,207,240,50,18
+    CONTROL         "",IDC_LISTPART,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,10,248,224
+    PUSHBUTTON      "添加节点",IDB_ADD,21,240,50,18
+    PUSHBUTTON      "修改节点",IDB_EDIT,83,240,50,18
+    PUSHBUTTON      "删除节点",IDB_DEL,145,240,50,18
+END
+
+IDD_SEGPARTSELDLG DIALOGEX 0, 0, 556, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "分段计算参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "横承：",IDC_STATIC,24,84,48,14
+    LTEXT           "上部固定绳：",IDC_STATIC,24,108,48,14
+    LTEXT           "下部固定绳：",IDC_STATIC,24,138,48,14
+    COMBOBOX        IDC_COMBOCROSSBEAR,84,84,84,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOFIXROPEUP,84,108,84,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOFIXROPEBELOW,84,138,84,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "请输入悬挂点数：",IDC_STATIC,28,18,74,17
+    EDITTEXT        IDC_EDITUNITROAD,120,15,102,16,ES_AUTOHSCROLL
+    LTEXT           "请输入节点总数：",IDC_STATIC,28,38,68,17
+    EDITTEXT        IDC_EDITNODENUM,120,35,102,16,ES_AUTOHSCROLL
+    LTEXT           "左支柱：",IDC_STATIC,26,168,48,14
+    COMBOBOX        IDC_COMBOPILLARLEFT,84,168,84,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "参数设置",IDC_STATIC,12,6,528,52
+    LTEXT           "右支柱：",IDC_STATIC,26,199,48,14
+    COMBOBOX        IDC_COMBOPILLARRIGHT,84,199,84,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "零件选择",IDC_STATIC,12,61,528,173
+    CONTROL         "使用双横承",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,84,57,12
+    PUSHBUTTON      "零件管理",IDB_PARTMANAGER,253,80,72,18
+END
+
+IDD_SEGNODESELDLG DIALOGEX 0, 0, 544, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "节点设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "最左/右的节点必须为非悬挂节点，只需设置该节点的水平距离，其他节点的自动计算，且总的悬挂点个数必须与上一步中设置的悬挂点数量一致",IDC_STATIC,42,5,272,19
+    CONTROL         "",IDC_LISTQ,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,30,519,207
+    COMBOBOX        IDC_COMBONODE,527,195,16,84,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOHANG,527,206,16,84,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDTDISTANCE,527,222,12,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "说明",IDC_STATIC,9,0,339,26
+    COMBOBOX        IDC_COMBOTOUCHLINE,527,174,16,84,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOCATENARY,527,156,16,84,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "节点管理",IDB_NODESET,360,6,60,18
+END
+
+IDD_PILLARPARTDLG DIALOGEX 0, 0, 196, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "支柱添加"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,42,130,50,14
+    PUSHBUTTON      "取消",IDCANCEL,96,130,50,14
+    LTEXT           "支柱上底：",IDC_STATIC,17,64,47,11
+    LTEXT           "支柱下底：",IDC_STATIC,17,85,47,11
+    LTEXT           "顶部宽度：",IDC_STATIC,18,106,47,11
+    EDITTEXT        IDC_EDTUP,75,64,105,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTBELOW,75,85,105,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTWIDTHUP,75,106,105,12,ES_AUTOHSCROLL
+    LTEXT           "支柱总长：",IDC_STATIC,17,43,47,11
+    EDITTEXT        IDC_EDTLEN,75,43,105,12,ES_AUTOHSCROLL
+    LTEXT           "支柱名称：",IDC_STATIC_NAME,17,6,47,11
+    EDITTEXT        IDC_EDTNAME,75,6,105,12,ES_AUTOHSCROLL
+    LTEXT           "支柱类型：",IDC_STATIC,17,24,47,11
+    COMBOBOX        IDC_COMBOTYPE,74,24,106,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PARTTYPEDLG DIALOGEX 0, 0, 214, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "零件类型管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,57,51,50,14
+    PUSHBUTTON      "取消",IDCANCEL,111,51,50,14
+    LTEXT           "类型名：",-1,20,11,42,12
+    EDITTEXT        IDC_EDITNAME,69,7,128,16,ES_AUTOHSCROLL
+    CONTROL         "零件参数含有重量",IDC_CHKWEIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,32,80,10
+    CONTROL         "零件参数含有长度",IDC_CHKHEIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,32,80,10
+END
+
+IDD_PARTTYPEMANAGERDLG DIALOGEX 0, 0, 250, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "零件类型管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,177,209,42,18
+    CONTROL         "",IDC_LISTPART,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,10,218,194
+    PUSHBUTTON      "添加",IDB_ADD,27,209,42,18
+    PUSHBUTTON      "修改",IDB_EDIT,77,209,42,18
+    PUSHBUTTON      "删除",IDB_DEL,127,209,42,18
+END
+
+IDD_PART_CONNECT_DLG DIALOGEX 0, 0, 538, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "零件连接情况"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LISTPART,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,13,27,510,201
+    LTEXT           "说明",IDC_STATIC,25,2,17,11
+    LTEXT           "单击选中条目点修改按钮修改零件连接情况（或双击条目）",IDC_STATIC,57,8,216,18
+    PUSHBUTTON      "修改",IDC_MODIFY_BTN,379,9,50,14
+END
+
+IDD_PART_CONNECT_MODIFY_DLG DIALOGEX 0, 0, 304, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "零件连接情况修改"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存修改",IDOK,68,226,50,14
+    PUSHBUTTON      "取消",IDCANCEL,174,226,50,14
+    LTEXT           "名称：",IDC_STATIC,68,20,25,8
+    EDITTEXT        IDC_NAME_EDIT,97,18,136,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    CONTROL         "",IDC_PART_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,22,39,255,132
+    LTEXT           "零件类型：",IDC_STATIC,37,181,41,8
+    LTEXT           "零        件：",IDC_STATIC,37,203,40,8
+    PUSHBUTTON      "添加",IDC_ADD_BTN,231,176,50,14
+    PUSHBUTTON      "删除",IDC_DEL_BTN,232,194,50,14
+    PUSHBUTTON      "插入",IDC_INSERT_BTN,232,211,50,14
+    COMBOBOX        IDC_PART_TYPE_COMBO,83,179,118,93,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PART_COMBO,83,201,118,110,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NODE_MODIFY_DLG DIALOGEX 0, 0, 425, 232
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "节点管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      ">>",IDC_ADD_BTN,189,109,42,14
+    DEFPUSHBUTTON   "保存",IDOK,137,211,50,14
+    PUSHBUTTON      "取消",IDCANCEL,239,211,50,14
+    LTEXT           "节点名称：",IDC_STATIC,26,21,40,8
+    EDITTEXT        IDC_NODE_NAME_EDIT,70,18,104,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PART_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,58,168,143
+    CONTROL         "",IDC_NODE_PART_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,241,58,171,144
+    PUSHBUTTON      "<<",IDC_DEL_BTN,190,136,42,14
+    LTEXT           "自输入重量：",IDC_STATIC,253,20,51,13
+    EDITTEXT        IDC_NODE_WEIGHT_EDIT,305,18,93,13,ES_AUTOHSCROLL
+    LTEXT           "零件可选择列表",IDC_STATIC,62,45,57,8
+    LTEXT           "零件已选择列表",IDC_STATIC,298,46,59,9
+END
+
+IDD_DXFTITLE_DLG DIALOGEX 0, 0, 306, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "dxf文件明细表表头清单"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "添加",ID_ADD_BTN,23,128,50,14
+    PUSHBUTTON      "删除",ID_DEL_BTN,162,128,50,14
+    DEFPUSHBUTTON   "修改",ID_MODIFY_BTN,93,128,50,14
+    CONTROL         "",IDC_DXFTITLE_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,293,110
+    PUSHBUTTON      "开始解析",ID_PARSE_BTN,231,128,50,14
+    CTEXT           "",IDC_TEXT_LABEL_BG,8,8,292,108,NOT WS_VISIBLE
+    CTEXT           "Static",IDC_TEXT_LABEL,37,58,228,15,NOT WS_VISIBLE
+END
+
+IDD_DXFTITLE_SET_DLG DIALOGEX 0, 0, 230, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "dxf文件明细表表头设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "添加",ID_ADD_BTN,21,162,50,14
+    PUSHBUTTON      "删除",ID_DEL_BTN,89,162,50,14
+    PUSHBUTTON      "保存",ID_SAVE_BTN,157,162,50,14
+    CONTROL         "",IDC_TITLE_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,216,136
+    EDITTEXT        IDC_TITLE_EDIT,7,147,21,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    COMBOBOX        IDC_PROPERTY_COMBO,72,148,25,62,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SITE_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_SEG_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_PARTLIBDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 473
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_PARTLIBMANAGERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 530
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 367
+    END
+
+    IDD_PARTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_PARTMANAGERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_NODEMANAGERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_SEGPARTSELDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 549
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_SEGNODESELDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 537
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_PILLARPARTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_PARTTYPEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_PARTTYPEMANAGERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_PART_CONNECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 531
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_PART_CONNECT_MODIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_NODE_MODIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_DXFTITLE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DXFTITLE_SET_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SITEPOPMENU MENU
+BEGIN
+    POPUP "站点"
+    BEGIN
+        MENUITEM "修改站点",                        IDM_EDIT
+        MENUITEM "删除站点",                        IDM_DEL
+        MENUITEM "添加分段",                        IDM_ADD
+    END
+END
+
+IDR_SEGPOPMENU MENU
+BEGIN
+    POPUP "分段"
+    BEGIN
+        MENUITEM "修改分段",                        IDM_EDIT
+        MENUITEM "删除分段",                        IDM_DEL
+        MENUITEM "设置分段属性",                      IDM_SET_SEGPARAM
+    END
+END
+
+IDR_ROOTSITEMENU MENU
+BEGIN
+    POPUP "根站点"
+    BEGIN
+        MENUITEM "添加站点",                        IDM_ADD
+        MENUITEM "导出",                          ID_MENU_SITE_EXPORT
+        MENUITEM "导入",                          ID_MENU_SITE_IMPORT
+    END
+END
+
+IDR_MAINMENU MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "&新建\tCtrl+N",                 IDM_ADD
+        MENUITEM "&修改\t\tCtrl+E",               IDM_EDIT
+        MENUITEM "&删除\t\tCtrl+D",               IDM_DEL
+        MENUITEM "&解析dxf文档",                    IDM_DXF_PARSE
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "&剪切\tCtrl+X",                 ID_EDIT_CUT
+        MENUITEM "&复制\tCtrl+C",                 ID_EDIT_COPY
+        MENUITEM "&粘贴\tCtrl+V",                 ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "&工具栏",                        ID_VIEW_TOOLBAR
+    END
+    POPUP "管理(&M)"
+    BEGIN
+        MENUITEM "零件管理",                        IDM_PART
+        MENUITEM "节点管理",                        IDM_NODEMANAGER
+        MENUITEM "站点管理",                        IDM_SITEMANAGER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SEG_MANAGER DLGINIT
+BEGIN
+    IDC_COMBOSITE, 0x403, 2, 0
+0x0031, 
+    IDC_COMBOSITE, 0x403, 2, 0
+0x0033, 
+    IDC_COMBOSITE, 0x403, 2, 0
+0x0035, 
+    IDC_COMBOSITE, 0x403, 2, 0
+0x0032, 
+    0
+END
+
+IDD_SEGNODESELDLG DLGINIT
+BEGIN
+    IDC_COMBOHANG, 0x403, 3, 0
+0xc7ca, "\000" 
+    IDC_COMBOHANG, 0x403, 3, 0
+0xf1b7, "\000" 
+    0
+END
+
+IDD_PILLARPARTDLG DLGINIT
+BEGIN
+    IDC_COMBOTYPE, 0x403, 9, 0
+0xecbb, 0xfdc4, 0xc1cd, 0xf9d6, "\000" 
+    IDC_COMBOTYPE, 0x403, 5, 0
+0xd6b8, 0xf9d6, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINTOOLBAR TOOLBAR 32, 32
+BEGIN
+    BUTTON      IDM_ADD
+    BUTTON      IDM_EDIT
+    BUTTON      IDM_DEL
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      IDM_SET_SEGPARAM
+    BUTTON      IDM_PART
+    BUTTON      IDM_NODEMANAGER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDM_ADD                 "添加站点或分段\n添加站点/分段"
+    IDM_EDIT                "修改站点或分段\n修改站点/分段"
+    IDM_DEL                 "删除站点或分段\n删除站点/分段"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_COPY            "复制单元格中的值，可横向、纵向复制多个值\n复制"
+    ID_EDIT_CUT             "剪切单元格中的值，可横向、纵向剪切多个值\n剪切"
+    ID_EDIT_PASTE           "粘贴单元格中的值，可横向、纵向粘贴多个值\n粘贴"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_SET_SEGPARAM        "设置分段的属性\n设置分段属性"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PART                "管理零件信息\n零件管理"
+    IDM_NODEMANAGER         "管理节点信息\n节点管理"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Master.ico"
+IDR_MasterTYPE          ICON                    "res\\MasterDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Customize...",               35001
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Master...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "P",            IDM_PART,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0409"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Master.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Master.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Master\n\nMaster\nMaster Files (*.mst)\n.mst\nMaster.Document\nMaster.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Master"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_PANE_OPTIONS        "Options"
+    IDR_PANE_PROPERTIES     "Properties"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Master.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

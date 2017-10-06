@@ -1,0 +1,250 @@
+ %% PLEASE DO NOT MODIFY OR DELETE THIS FILE! %% 
+ %% 文件包含关于应用程序安装的信息。 %% 
+ %% 如果选择这样做，将自动删除您计算机上的所有应用程序部件。 %% 
+
+
+NOTE: 引导扇区首
+
+CONFIG: Title: "腕臂计算"
+
+ACTION: TempFile: "C:\WINDOWS\setup1.exe"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "SharedDLLs"
+
+ACTION: SharedFile: "C:\WINDOWS\system32\VB5StKit.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\VB5CHS.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MSVBVM50.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\StdOle2.tlb"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\OleAut32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\OlePro32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\AsycFilt.dll"
+(磁盘上的当前文件已经过时)
+
+NOTE: 由于将只用于 Windows NT 3.51，文件 'Ctl3d32.dll' 未被复制。它不需要在 Windows 95 或 NT 4.0 下使用。
+
+ACTION: SystemFile: "C:\WINDOWS\system32\Ctl3d32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\ComCat.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\MSVBVM50.dll"
+
+ACTION: TLBRegister: "C:\WINDOWS\system32\StdOle2.tlb"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\OleAut32.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\OlePro32.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\ComCat.dll"
+
+NOTE: 引导扇区尾
+
+NOTE: 正在生成主安装程序 'C:\WINDOWS\setup1.exe'....
+
+ACTION: SharedFile: "C:\WINDOWS\system32\COMDLG32.OCX"
+(磁盘上的当前文件已经过时)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\CmDlgCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\COMCTL32.OCX"
+(磁盘上的当前文件已经过时)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\DBLIST32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\DBLstCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\DBGRID32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\DBGrdCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\PICCLP32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\PcClpCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MSJtEr35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MSJInt35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MSVCRT40.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\CRYSTL32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\CC245CHS.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\CRPE32.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\IMPLODE.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\PG32.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\CO2C40EN.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MSVCRT20.DLL"
+(磁盘上的当前文件已经过时)
+
+ACTION: CreateDir: "C:\WINDOWS\Crystal"
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\CRXLAT32.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\P2BBND.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\P2BDAO.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\P2CTDAO.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\P2IRDAO.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\P2SODBC.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2DDISK.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2DMAPI.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FCR.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FDIF.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FHTML.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FREC.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FRTF.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FSEPV.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FTEXT.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FWKS.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FWORDW.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\Crystal\U2FXLS.DLL"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\MSMASK32.OCX"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\MSMskCHS.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MSJet35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\VBAJet32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\VB5DB.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MSRD2x35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\MsRepl35.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\ODBCJt32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\ODBCJI32.dll"
+(磁盘上的当前文件已经过时)
+
+ACTION: SystemFile: "C:\WINDOWS\system32\ODBCTL32.dll"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\宁岢软横跨计算\ruanhk\武广腕臂计算\武广腕臂计算.exe"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\宁岢软横跨计算\ruanhk\武广腕臂计算\clsjin.csv"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\宁岢软横跨计算\ruanhk\武广腕臂计算\thsjin.csv"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\宁岢软横跨计算\ruanhk\武广腕臂计算\WBJS.mdb"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\宁岢软横跨计算\ruanhk\武广腕臂计算\wbsj.rpt"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\宁岢软横跨计算\ruanhk\武广腕臂计算\zzzp.rpt"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: PrivateFile: "d:\宁岢软横跨计算\ruanhk\武广腕臂计算\zzzp2.rpt"
+(文件未找到或版本太旧 -- 复制新文件)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\COMDLG32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\COMCTL32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\DBLIST32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\DBGRID32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\PICCLP32.OCX"
+
+ACTION: DllSelfRegister: "C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\CRYSTL32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\MSMASK32.OCX"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\MSJet35.dll"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\MSRD2x35.dll"
+
+ACTION: ShellLink: "", "腕臂计算"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "App Paths\武广腕臂计算.exe"
+
+ACTION: RegValue: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\武广腕臂计算.exe", ""
+

@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Sqlite3">
+      <UniqueIdentifier>{a2386c81-6f38-4871-8ea4-9f09206b0c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{4d0480e6-2d2d-4d1b-8790-3ef60d6749c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{086c97e9-a9d4-4842-9381-eeab97349b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ListCtrlEx">
+      <UniqueIdentifier>{2d2da979-331d-4805-a635-b330d6b2c668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunction">
+      <UniqueIdentifier>{9ea78b2e-afcd-496b-b253-963724546002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UltimateGrid">
+      <UniqueIdentifier>{324d9826-15a4-4846-bbff-fe42fa776b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UltimateGrid\CellTypes">
+      <UniqueIdentifier>{3d5acf66-ba58-4ac8-be69-8deb0be2ec61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UltimateGrid\Include">
+      <UniqueIdentifier>{92146a90-706a-4e1c-a817-a55526dd33eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UltimateGrid\Source">
+      <UniqueIdentifier>{8f8334a0-97d2-402d-91d0-17df1d63e046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTPEx">
+      <UniqueIdentifier>{80600bdc-83a4-4403-b23a-6a562535c2bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxf">
+      <UniqueIdentifier>{3965852a-424d-453d-b3a6-49c72d781ab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxf\dxflib">
+      <UniqueIdentifier>{8eb13de4-430e-4ee9-9d50-310f1bade523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="miniexcel">
+      <UniqueIdentifier>{10f2ab7b-29cd-4633-83be-b8534508152b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="Master.reg" />
+    <None Include="res\Master.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MasterDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Master.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\paneicons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\folders.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TreeIcons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon4.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon5.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon6.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\快盘\软件材料\Master\Master\res\paneicons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\softcross.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\maintoolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\图标\maintoolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\maintoolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbarGray.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbarGray.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbarGray.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbarLight.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Master.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoftCrossCompute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3\sqlite3.h">
+      <Filter>Sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3\CppSQLite3.h">
+      <Filter>Sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="SiteManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SegManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartLibDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartLibManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalFun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\DBInit.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\NodeDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\PartDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\SegDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\SiteDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\PartTypeManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\SegParamDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="SegParamFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SegPartSelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SegNodeSelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\SegInputDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\PillarDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="PillarPartDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CListCtrlEx\MsgHook.h">
+      <Filter>ListCtrlEx</Filter>
+    </ClInclude>
+    <ClInclude Include="CListCtrlEx\ListCtrlEx.h">
+      <Filter>ListCtrlEx</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\SegOutDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\SegInFormatter.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="PartTypeManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartTypeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\PartTypeDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFunction\CommonFunction.h">
+      <Filter>CommonFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTafnt.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTAutoSize.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTbutn.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTDropGrid.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTdtp.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\ugctelps.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTExpand.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTLabeled.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTMail.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTMailSort.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTMarquee.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTmfnt.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTNote.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\ugctnotewnd.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTOutlookHeader.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTpie.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTpro1.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTprog.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTRado.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTsarw.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTsldr.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\CellTypes\UGCTSpin.h">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UG64Bit.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGCBType.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGCell.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugceltyp.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGCnrBtn.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGCTarrw.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGCtrl.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugdefine.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGDLType.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGDrgDrp.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGDrwHnt.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGDtaSrc.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGEdit.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGEditBase.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugformat.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\uggdinfo.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGGrid.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGHint.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ughscrol.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\uglstbox.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGMEdit.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGMemMan.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGMultiS.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugprint.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugptrlst.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugsidehd.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGStrOp.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugstruct.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugtab.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\UGTopHdg.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugvscrol.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\Include\ugxpthemes.h">
+      <Filter>UltimateGrid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\DataType.h">
+      <Filter>UltimateGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UltimateGrid\GridCtrl.h">
+      <Filter>UltimateGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="SoftCrossCalculatePage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\SegOutFormatter.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\PartConnectDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="PartConnectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartConnectModifyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeModifyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CXTPEx\XTPTabControlEx.h">
+      <Filter>XTPEx</Filter>
+    </ClInclude>
+    <ClInclude Include="MyStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_attributes.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_codes.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_creationadapter.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_creationinterface.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_dxf.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_entities.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_exception.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_extrusion.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_writer.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\dxflib\dl_writer_ascii.h">
+      <Filter>dxf\dxflib</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\TableParser.h">
+      <Filter>dxf</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\test_creationclass.h">
+      <Filter>dxf</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\DxfTitleDBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DxfTitleDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dxf\DxfParser.h">
+      <Filter>dxf</Filter>
+    </ClInclude>
+    <ClInclude Include="miniexcel\mexcel.h">
+      <Filter>miniexcel</Filter>
+    </ClInclude>
+    <ClInclude Include="DxfTitleSetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Master.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftCrossCompute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3\CppSQLite3.cpp">
+      <Filter>Sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="SiteManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SegManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PartLibDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PartLibManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalFun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PartDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PartManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\DBInit.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\NodeDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\PartDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\SegDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\SiteDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\PartTypeManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\SegParamDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="SegParamFormatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SegPartSelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SegNodeSelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\SegInputDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\PillarDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="PillarPartDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CListCtrlEx\ListCtrlEx.cpp">
+      <Filter>ListCtrlEx</Filter>
+    </ClCompile>
+    <ClCompile Include="CListCtrlEx\MsgHook.cpp">
+      <Filter>ListCtrlEx</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\SegOutDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\SegInFormatter.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="PartTypeManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PartTypeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\PartTypeDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFunction\CommonFunction.cpp">
+      <Filter>CommonFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTafnt.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTAutoSize.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTbutn.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTDropGrid.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTdtp.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\ugctelps.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTExpand.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTLabeled.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTMail.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTMailSort.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTMarquee.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTmfnt.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTNote.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\ugctnotewnd.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTOutlookHeader.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTpie.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTpro1.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTprog.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTRado.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTsarw.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTsldr.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\CellTypes\UGCTSpin.cpp">
+      <Filter>UltimateGrid\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGCBType.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGCell.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGCelTyp.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGCnrBtn.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGCTarrw.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGCtrl.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGDLType.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGDrgDrp.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGDrwHnt.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGDtaSrc.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGEdit.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGEditBase.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ugformat.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\uggdinfo.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGGrid.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGHint.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ughscrol.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ugLstBox.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGMEdit.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGMemMan.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGMultiS.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ugprint.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ugptrlst.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ugsidehd.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGStrOp.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ugtab.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGTopHdg.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\ugvscrol.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\Source\UGXPThemes.cpp">
+      <Filter>UltimateGrid\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UltimateGrid\GridCtrl.cpp">
+      <Filter>UltimateGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftCrossCalculatePage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\SegOutFormatter.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\PartConnectDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="PartConnectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PartConnectModifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeModifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CXTPEx\XTPTabControlEx.cpp">
+      <Filter>XTPEx</Filter>
+    </ClCompile>
+    <ClCompile Include="MyStatic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dxf\dxflib\dl_dxf.cpp">
+      <Filter>dxf\dxflib</Filter>
+    </ClCompile>
+    <ClCompile Include="dxf\dxflib\dl_writer_ascii.cpp">
+      <Filter>dxf\dxflib</Filter>
+    </ClCompile>
+    <ClCompile Include="dxf\TableParser.cpp">
+      <Filter>dxf</Filter>
+    </ClCompile>
+    <ClCompile Include="dxf\test_creationclass.cpp">
+      <Filter>dxf</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\DxfTitleDBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DxfTitleDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="miniexcel\mexcel.cpp">
+      <Filter>miniexcel</Filter>
+    </ClCompile>
+    <ClCompile Include="DxfTitleSetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Master.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
